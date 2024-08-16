@@ -1,3 +1,10 @@
+---
+const routes = [
+    { name: 'Home', link: '/' },
+    { name: 'About', link: '/about' }
+]
+---
+
 <!-- This asrto layout -->
 <!DOCTYPE html>
 <html lang="en">
@@ -8,24 +15,74 @@
   </head>
   <body>
     <header>
-        This is the header
+        <h1>
+            Asrto
+        </h1>
         <ul>
-            <li>
-                <a href="/">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="/about">
-                    About
-                </a>
-            </li>
+            <!-- we don't need key cuz astro doesn't build virtual DOM -->
+            {routes.map(route=> {
+                return <li>
+                    <a href={route.link}>{route.name}</a>
+                </li>
+            })}
         </ul>
     </header>
     <!-- almost similar to the react children -->
     <slot />  
-    <footer>This is the footer</footer>
+    <footer>
+        <h1>
+            PAGE FOOTER
+        </h1>
+    </footer>
   </body>
 </html>
 
+<!-- global styles -->
+<style is:global>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
+    html, body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    header {
+        width: 100%;
+        padding: 2rem;
+        background-color: hotpink;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        color: white;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        margin-left: auto;
+    }
+
+    a {
+        color: cyan;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 4rem;
+        background-color: honeydew;
+        color: hotpink;
+    }
+</style>

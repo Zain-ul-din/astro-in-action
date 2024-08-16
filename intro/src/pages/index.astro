@@ -4,7 +4,19 @@ import Layout from "../layout/default.astro";
 
 <Layout>
   <main>
-    <h1 style="color: blue">This is website content</h1>
+    <h1>This is website content</h1>
   </main>
 </Layout>
 
+
+<!-- CSS scoping -->
+<style>
+  main {
+    margin: auto auto;
+  }
+
+  h1 {
+    font-size: 5rem;
+    color: hotpink;
+  }
+</style>
