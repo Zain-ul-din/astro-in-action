@@ -1,5 +1,5 @@
 ---
-layout: ../layout/default.astro
+layout: ../layouts/page.astro
 ---
 
 ## This is about page

@@ -1,0 +1,27 @@
+---
+import Layout from "./default.astro";
+---
+
+<Layout>
+    <h1>
+        📃 Markdowns
+    </h1>
+    <main>
+        <slot />
+    </main>
+</Layout>
+
+<style>
+
+    h1 {
+        margin: 4rem 1rem;
+    }
+    
+    main {
+        padding: 2rem;
+        margin: 1rem;
+        border: 1px solid hotpink;
+    }
+</style>
+
+<!-- nested layout example -->

@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/default.astro"
+---
+
+<Layout>
+    <main>
+        <h2>This is pretty BAD! you are at wrong side of the site!!</h2>
+        <a href="/">
+            <button>GO Home ASAP!</button>
+        </a>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    button {
+        padding: 1.5rem 4rem;
+        border-radius: 1rem;
+        outline: none;
+        border: none;
+        background-color: hotpink;
+        color: white;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    
+    button:hover {
+        transition: all;
+        transition-duration: 200ms;
+        box-shadow: 5px 5px 0px pink;
+        cursor: pointer;
+    }
+</style>
