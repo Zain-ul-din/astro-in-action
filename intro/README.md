@@ -56,3 +56,8 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - [Slots](https://docs.astro.build/en/basics/astro-components/#slots)
 - [Tailwind](https://docs.astro.build/en/guides/styling/#tailwind)
 - [Assets](https://docs.astro.build/en/guides/images/)
+
+**Useful Demo's**
+
+- [shared-state-between-multiple-frameworks/](https://www.learnwithjason.dev/shared-state-between-multiple-frameworks/)
+- [tanstack-query-v4/](https://www.learnwithjason.dev/tanstack-query-v4/)
